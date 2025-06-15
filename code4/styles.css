@@ -1,7 +1,6 @@
-
 /* JavaScript 7th Edition
 Chapter 2
-Hands-on Project 2-2
+Hands-on Project 2-4
 Filename: styles.css
 */
 /* apply a natural box layout model to all elements */
@@ -38,30 +37,30 @@ display: block;
 }
 body {
 line-height: 1;
-max-width: 960px;
+width: 960px;
 background: white;
-margin: 40px auto;
-font-family: Arial, Helvetica, sans-serif;
-border: 4px outset gray;
+margin: 30px auto;
+font-family: Verdana, Geneva, sans-serif;
+position: relative;
 }
 ol, ul {
 list-style: none;
 }
 /* page header */
 header {
-background: #FFE373;
+background: #330570;
 width: 100%;
-color: black;
+color: #FFFFFF;
 font-size: 48px;
 text-align: center;
 line-height: 1.5em;
 }
 /* main content */
 article {
-width: 100%;
-text-align: center;
-background: #BFA230;
-padding-bottom: 20px;
+width: 960px;
+height: 250px;
+text-align: left;
+background: #FFCF40;
 }
 article h2 {
 font-weight: bold;
@@ -69,55 +68,58 @@ font-size: 24px;
 padding: 10px;
 }
 /* form */
-#submitbutton input {
-font-family: georgia, "times new roman", times, serif;
-}
-fieldset {
-position: relative;
-padding: 1em;
-background: white;
-text-align: left;
-}
 form {
-background: white;
-padding: 10px 5px 7px 5px;
 margin: 0 auto;
-width: 750px;
-border: 2px solid black;
 }
 input {
-font-size: 1em;
-}
-input:focus {
-background: #e3d5ba;
+float: left;
+clear: left;
+margin: 10px;
 }
 label {
-display: block;
-position: relative;
-margin: 12px 0;
+float: left;
+font-size: 1.4em;
 }
-#contactinfo input {
+aside {
 position: absolute;
-left: 100px;
+top: 120px;
+left: 400px;
+outline: 1px solid red;
 }
-#nameinput, #emailinput {
-width: 30em;
+aside span {
+position: absolute;
+font-size: 1.4em;
 }
-#phoneinput {
-width: 12em;
+aside span#totalLab {
+top: 0px;
+left: 0px;
+width: 220px;
 }
-#submit {
-background: #e3d5ba;
-font-size: 1.25em;
--webkit-border-top-left-radius: 10px;
--webkit-border-bottom-right-radius: 10px;
--moz-border-radius-topleft: 10px;
--moz-border-radius-bottomright: 10px;
-border-top-left-radius: 10px;
-border-bottom-right-radius: 10px;
+aside span#foodTotal {
+top: 0px;
+left: 280px;
+width: 100px;
+text-align: right;
 }
-#submitbutton {
-padding: 0.5em 0;
-margin-bottom: 0;
-text-align: center;
+aside span#taxLab {
+top: 40px;
+left: 0px;
+width: 220px;
+}
+aside span#foodTax {
+top: 40px;
+left: 280px;
+width: 100px;
+text-align: right;
+}
+aside span#billLab {
+top: 80px;
+left: 0px;
+width: 220px;
+}
+aside span#totalBill {
+top: 80px;
+left: 280px;
+width: 100px;
+text-align: right;
 }

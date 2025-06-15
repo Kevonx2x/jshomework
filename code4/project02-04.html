@@ -34,50 +34,54 @@ verifying that an alert box with the message “Thank you!” is displayed -->
 
     Filename: project01-03.html
 -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hands-on Project 2-2</title>
+  <title>Hands-on Project 2-4</title>
 
   <!-- Name: YOUR NAME | Date: TODAY'S DATE -->
-  <script src="project02-02_txt.js" defer></script>
-    <link rel="stylesheet" href="styles.css">
+  <script src="project02-04_txt.js" defer></script>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <header>
-    <h1>Hands-on Project 2-2</h1>
+    <h1>Hands-on Project 2-4</h1>
   </header>
 
   <article>
-    <h2>Contact Information</h2>
+    <h2>Lunch selections</h2>
     <form>
-      <fieldset id="contactinfo">
-        <label for="nameinput">
-          Name:
-          <input type="text" id="name" name="name">
-        </label><br><br>
+      <input type="checkbox" id="chicken" value="10.95">
+      <label for="chicken">Fried chicken ($10.95)</label><br>
 
-        <label for="emailinput">
-          Email:
-          <input type="text" id="email" name="email">
-        </label><br><br>
+      <input type="checkbox" id="halibut" value="13.95">
+      <label for="halibut">Fried halibut ($13.95)</label><br>
 
-        <label for="phoneinput">
-          Phone:
-          <input type="text" id="phone" name="phone">
-        </label>
-      </fieldset><br>
+      <input type="checkbox" id="burger" value="9.95">
+      <label for="burger">Hamburger ($9.95)</label><br>
 
-      <fieldset id="submitbutton">
-        <input type="button" id="submit" value="Submit">
-      </fieldset>
+      <input type="checkbox" id="salmon" value="18.95">
+      <label for="salmon">Grilled salmon ($18.95)</label><br>
+
+      <input type="checkbox" id="salad" value="7.95">
+      <label for="salad">Side salad ($7.95)</label><br>
     </form>
   </article>
 
+  <aside>
+    <span id="totalLab">Total Cost of Items:</span>
+    <span id="foodTotal">$0.00</span><br>
+
+    <span id="taxLab">Tax:</span>
+    <span id="foodTax">$0.00</span><br>
+
+    <span id="billLab">TOTAL:</span>
+    <span id="totalBill">$0.00</span>
+  </aside>
+
 </body>
 </html>
+
 
