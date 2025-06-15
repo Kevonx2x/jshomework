@@ -1,14 +1,16 @@
 /* JavaScript 7th Edition
-Chapter 2
-Hands-on Project 2-4
+Chapter 3
+Hands-on Project 3-1
 Filename: styles.css
 */
+
 /* apply a natural box layout model to all elements */
 * {
--moz-box-sizing: border-box;
--webkit-box-sizing: border-box;
-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
+
 /* reset rules */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -23,103 +25,89 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-display: block;
+  display: block;
 }
+
 body {
-line-height: 1;
-width: 960px;
-background: white;
-margin: 30px auto;
-font-family: Verdana, Geneva, sans-serif;
-position: relative;
+  line-height: 1;
+  width: 960px;
+  background: white;
+  margin: 0 auto;
+  font-family: Verdana, Geneva, sans-serif;
 }
+
 ol, ul {
-list-style: none;
+  list-style: none;
 }
+
 /* page header */
 header {
-background: #330570;
-width: 100%;
-color: #FFFFFF;
-font-size: 48px;
-text-align: center;
-line-height: 1.5em;
+  background: #5472B2;
+  width: 100%;
+  color: #FFFFFF;
+  font-size: 48px;
+  text-align: center;
+  line-height: 1.5em;
+  padding: 10px 0;
 }
+
 /* main content */
 article {
-width: 960px;
-height: 250px;
-text-align: left;
-background: #FFCF40;
+  width: 960px;
+  min-height: 250px;
+  background: #FFDB70;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
+
 article h2 {
-font-weight: bold;
-font-size: 24px;
-padding: 10px;
+  font-weight: bold;
+  font-size: 24px;
+  padding-bottom: 10px;
 }
-/* form */
+
+/* form section */
 form {
-margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
 }
-input {
-float: left;
-clear: left;
-margin: 10px;
+
+form input[type="checkbox"] {
+  margin-right: 10px;
 }
-label {
-float: left;
-font-size: 1.4em;
+
+form label {
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
 }
+
+/* total section */
 aside {
-position: absolute;
-top: 120px;
-left: 400px;
-outline: 1px solid red;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding-left: 20px;
+  flex-shrink: 0;
+  min-width: 200px;
+  align-self: flex-start;
 }
-aside span {
-position: absolute;
-font-size: 1.4em;
-}
-aside span#totalLab {
-top: 0px;
-left: 0px;
-width: 220px;
-}
-aside span#foodTotal {
-top: 0px;
-left: 280px;
-width: 100px;
-text-align: right;
-}
-aside span#taxLab {
-top: 40px;
-left: 0px;
-width: 220px;
-}
-aside span#foodTax {
-top: 40px;
-left: 280px;
-width: 100px;
-text-align: right;
-}
-aside span#billLab {
-top: 80px;
-left: 0px;
-width: 220px;
-}
-aside span#totalBill {
-top: 80px;
-left: 280px;
-width: 100px;
-text-align: right;
+
+#billTotal {
+  font-weight: bold;
+  padding-left: 5px;
 }
